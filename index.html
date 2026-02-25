@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">	
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="style.css">
+    <title>Intramurals Registration Check</title>
+
+</head>
+<body>
+
+    <div class="container-navbar">
+      <navbar class="navbar-investigate">
+        <a href="index.html">Intrams Team</a>
+        <a href="players.html">List of Players</a>
+        <a href="signup.html">Signup</a>
+        </navbar>
+            </div>
+    <br>
+
+    <div class="container">
+        <h1>Intramurals Registration Check</h1>
+        <hr>
+        <br>
+        <form>
+                <div class="container1">
+                    <label for="grade"><h3>Are you done with Online Registration?</h3></label> <br>
+
+                    <input type="radio" name="registration" value="yes">yes
+                    <input type="radio" name="registration" value="no">no
+
+                    <br>
+                    <label for="grade"><h3>Do you have the Medical Clearance from the clinic?</h3></label> <br>
+                    
+                    <input type="radio" name="clearance" value="yes">yes
+                    <input type="radio" name="clearance" value="no">no
+                </div>
+        <div class="container2">
+
+            <br>
+                <label for="grade_section"><h3>Kindly input your Grade Level & Section.</h3></label>
+
+            <select class="form-control mt-3" name="grade" id="grade">
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <select class="form-control mt-3" name="section" id="section">
+                <option value="ruby">Ruby</option>
+                <option value="sapphire">Sapphire</option>
+                <option value="emerald">Emerald</option>
+                <option value="topaz">Topaz</option>
+            </select>
+          
+            <input class="form-control mt-3" type="button" py-click="checkRegistration" value="Submit">
+            <br>
+        <div id="result"></div>
+    </div>
+    <py-script src="main.py"></py-script>
+        </div>
+    </form>
+    </div>
